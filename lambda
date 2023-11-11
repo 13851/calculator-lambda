@@ -1,0 +1,81 @@
+
+# lambda calculator
+s1 = "enter your first number"
+s2 = "enter your second number"
+s3 = "enter your third number"
+print("welcom to lambda calculator")
+print("please answer with '3' or '2'")
+while True:
+    num = input("3 numbers or 2 numbers ? ")
+    if num == '2':
+        num = 2
+        break
+    elif num == '3':
+        num = 3
+        break
+    else:
+        print("wrong try again !!!")
+x1 = lambda a, b : a + b
+x2 = lambda a, b : a - b
+x3 = lambda a, b : a * b
+x4 = lambda a, b : a / b
+y1 = lambda a, b, c : a + b + c
+y2 = lambda a, b, c : a - b - c
+y3 = lambda a, b, c : a * b * c
+y4 = lambda a, b, c : a / b / c
+if num == 2:
+    while True:
+        x = input("'+' or '-' or '*' or '/' ? ")
+        if x == '+':
+            a = float(input(s1))
+            b = float(input(s2))
+            print(x1(a, b))
+            break
+        elif x == '-':
+            a = float(input(s1))
+            b = float(input(s2))
+            print(x2(a, b))
+            break
+        elif x == '*':
+            a = float(input(s1))
+            b = float(input(s2))
+            print(x3(a, b))
+            break
+        elif x == '/':
+            a = float(input(s1))
+            b = float(input(s2))
+            print(x4(a, b))
+            break
+        else:
+            print("wrong try again !!!")
+if num == 3:
+    while True:
+        y = input("'+' or '-' or '*' or '/' ? ")
+        if y == '+':
+            a = float(input(s1))
+            b = float(input(s2))
+            c = float(input(s3))
+            print(y1(a, b, c))
+            break
+        elif y == '-':
+            a = float(input(s1))
+            b = float(input(s2))
+            c = float(input(s3))
+            print(y2(a, b, c))
+            break
+        elif y == '*':
+            a = float(input(s1))
+            b = float(input(s2))
+            c = float(input(s3))
+            print(y3(a, b, c))
+            break
+        elif y == '/':
+            a = float(input(s1))
+            b = float(input(s2))
+            c = float(input(s3))
+            print(y4(a, b, c))
+            break
+        else:
+            print("wrong try again !!!")
+
+# this is the end
